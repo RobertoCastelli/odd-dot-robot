@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgrey;
+    height: auto;
+    width: 350px;   
+}
+
+h1 {
+    border: 2px solid brown;
+    border-radius: 10px;
+    color: brown;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: grey;    
+}
+
+li {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    background: white;
+}
+
+li:hover {
+    background: grey;
+}
+
+i {
+    cursor: pointer;
+    float: right;
+    padding-right: 10px;
+}
+    
+i:hover {
+    color: brown;
+    transform: scale(1.2);
+}
+
+#buttons {
+    display: block;
+    float: right;
+}
+
+.robotBox {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.dataClass {
+    font-size: 10px;
+}
+
+#robot {
+    float: left;
+    position: relative;
+    opacity: 0.8;  
+    cursor: pointer;  
+
+}
+
+.pulsar {
+    width: 12px;
+    height: 12px;
+    border: 1px solid red;
+    background-color: brown;
+    border-radius: 100%;
+    animation: pulsate 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0.5;
+    position: absolute;
+    display: block;
+    margin-left: 13px;
+    z-index: 1;    
+    top: -13px;
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+.checked {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.checked i {
+    color: black;
+}
+
+.alert {
+    color: brown;
+}
+
+#box {
+    float: left;
+}
